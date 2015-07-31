@@ -1,4 +1,4 @@
-var app = angular.module('angular',[]);
+var app = angular.module('Slideshows using Angular JS',['slick']);
 
 app.directive('slideit',function() {
     return {
@@ -33,3 +33,7 @@ app.controller('MainCtrl', function($scope) {
        {src: $scope.base + 't/p/w1280/oYZtd7Md78HuzBvT5dlJlHWc89O.jpg' }
      ];
 });
+
+
+
+
