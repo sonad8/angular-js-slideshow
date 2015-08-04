@@ -30,7 +30,17 @@ app.controller('MainCtrl', function($scope) {
   $scope.images = [
        {src: $scope.base + 't/p/w1280/8y2IcNwQBuyuud3YO8IP41xUgEz.jpg' },
        {src: $scope.base + 't/p/w1280/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg' },
-       {src: $scope.base + 't/p/w1280/oYZtd7Md78HuzBvT5dlJlHWc89O.jpg' }
+       {src: $scope.base + 't/p/w1280/oYZtd7Md78HuzBvT5dlJlHWc89O.jpg' },
+       {src: $scope.base + 't/p/w1280/8fW3GPYTFUCutgfh77LbGbw3yQI.jpg'},
+       {src: $scope.base + 't/p/w1280/8y2IcNwQBuyuud3YO8IP41xUgEz.jpg' },
+       {src: $scope.base + 't/p/w1280/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg' },
+       {src: $scope.base + 't/p/w1280/oYZtd7Md78HuzBvT5dlJlHWc89O.jpg' },
+       {src: $scope.base + 't/p/w1280/8fW3GPYTFUCutgfh77LbGbw3yQI.jpg'},
+       {src: $scope.base + 't/p/w1280/8y2IcNwQBuyuud3YO8IP41xUgEz.jpg' },
+       {src: $scope.base + 't/p/w1280/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg' },
+       {src: $scope.base + 't/p/w1280/oYZtd7Md78HuzBvT5dlJlHWc89O.jpg' },
+       {src: $scope.base + 't/p/w1280/8fW3GPYTFUCutgfh77LbGbw3yQI.jpg'},
+
      ];
 });
 

@@ -14,17 +14,47 @@
 <script type="text/javascript" src="index.js"></script>
 </head>
 <body ng-app="Slideshows using Angular JS">
-<div  id="sliderwrapper" ng-controller="MainCtrl">
-  <div slideit="images"></div>
- </div>
- <div>
-  <slick arrows="true" dots="true" infinite="true" slides-to-show="3" slides-to-scroll="3">
-		<div><img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" width="700px" height="500px"> </div>
-		<div><img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" width="700px" height="500px"></div>
-		<div><img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" width="700px" height="500px"></div>
-		<div><img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" width="700px" height="500px"> </div>
-		<div><img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" width="700px" height="500px"></div>
-		<div><img src="http://www.hdwallpapersimages.com/wp-content/uploads/2014/01/Winter-Tiger-Wild-Cat-Images.jpg" width="700px" height="500px"></div>
+ <div  id="sliderwrapper" ng-controller="MainCtrl">
+	<div slideit="images"></div>
+<div >
+ 	<slick arrows="true" dots="true" infinite="true" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
+	<div ng-repeat= "x in images" >
+     		<img  ng-src= "{{x.src}}" >
+	</div>
+	</slick>
+</div>
+</div>
+<div>
+	<slick arrows="true" dots="true" infinite="true" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
+		<div>
+			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
+			"200px" width="400px">
+		</div>
+				<div>
+			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
+			"200px" width="400px">
+		</div>
+				<div>
+			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
+			"200px" width="400px">
+		</div>
+
+				<div>
+			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
+			"200px" width="400px">
+		</div>		<div>
+			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
+			"200px" width="400px">
+		</div>
+
 	</slick>
 </div>
 </body>
