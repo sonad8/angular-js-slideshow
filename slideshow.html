@@ -2,60 +2,33 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-<title>Angular JS Slideshow DOGOmedia 2015</title>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="jquery.bxslider.min.js"></script>
-<link rel="stylesheet" type="text/css" href="jquery.bxslider.css"></link>
-<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
-<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
-<script src="bower_components/slick-carousel/slick/slick.js"></script>
-<script src="bower_components/angular-slick/dist/slick.js"></script>
-<script type="text/javascript" src="index.js"></script>
+	<title>Angular JS Slideshow DOGOmedia 2015</title>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="jquery.bxslider.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.bxslider.css"></link>
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+	<script src="bower_components/slick-carousel/slick/slick.js"></script>
+	<script src="bower_components/angular-slick/dist/slick.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </head>
 <body ng-app="Slideshows using Angular JS">
- <div  id="sliderwrapper" ng-controller="MainCtrl">
-	<div slideit="images"></div>
-<div >
- 	<slick arrows="true" dots="true" infinite="true" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
-	<div ng-repeat= "x in images" >
-     		<img  ng-src= "{{x.src}}" >
+	<div id="sliderwrapper" ng-controller="MainCtrl">
+		<div slideit="images"></div>
+		<!--<slick arrows="true" dots="true" infinite="true" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
+			<div ng-repeat= "x in images" >
+				<img  ng-src= "{{x.src}}" >
+			</div>
+		</slick> -->
+	<!-- API movie stuff-->
+		<slick arrows="true" dots="true" infinite="true" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1" class="slider" ng-if="movies">
+			<div ng-repeat="x in movies">
+				<div class="image">
+					<img ng-src="{{x.thumb}}">
+				</div>
+			</div>
+		</slick>
 	</div>
-	</slick>
-</div>
-</div>
-<div>
-	<slick arrows="true" dots="true" infinite="true" speed="300" slides-to-show="5" touch-move="false" slides-to-scroll="1">
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div><img src="https://latestmovieposters.files.wordpress.com/2015/06/jurassic-world-2015-movie-poster.jpg" height="200px" width="400px"></div>
-		<div>
-			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
-			"200px" width="400px">
-		</div>
-				<div>
-			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
-			"200px" width="400px">
-		</div>
-				<div>
-			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
-			"200px" width="400px">
-		</div>
-
-				<div>
-			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
-			"200px" width="400px">
-		</div>		<div>
-			<img src="http://www.fashiongonerogue.com/wp-content/uploads/2014/12/insurgent-2015-movie-posters01.jpg" height=
-			"200px" width="400px">
-		</div>
-
-	</slick>
-</div>
 </body>
 </html>

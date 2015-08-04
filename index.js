@@ -25,7 +25,7 @@ app.directive('slideit',function() {
     }; 
 });
 
-app.controller('MainCtrl', function($scope) {
+app.controller('MainCtrl', function($scope, $http) {
   $scope.base = 'http://image.tmdb.org/';
   $scope.images = [
        {src: $scope.base + 't/p/w1280/8y2IcNwQBuyuud3YO8IP41xUgEz.jpg' },
@@ -42,8 +42,14 @@ app.controller('MainCtrl', function($scope) {
        {src: $scope.base + 't/p/w1280/8fW3GPYTFUCutgfh77LbGbw3yQI.jpg'},
 
      ];
+
+     function fetch(){
+    $http.get("http://api.dogomedia.com/api/v3/movies?api_key=hvvoQDSezVzDo6h4Wyiq")
+    .success(function(response){
+      $scope.movies= response.results;
+    });
+  }
+  fetch();
 });
-
-
 
 
